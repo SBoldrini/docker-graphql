@@ -26,9 +26,11 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t witack/docker-graphql:0.0.1 .
+        docker build -t witack/docker-graphql:latest .
     - name: Push Docker Image
       run: |
         docker push witack/docker-graphql:0.0.1
+        docker push witack/docker-graphql:latest
 
     
     # - name: Build the Docker image
