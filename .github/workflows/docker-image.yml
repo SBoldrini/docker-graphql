@@ -48,5 +48,5 @@ jobs:
         docker push witack/docker-graphql:latest
 
     
-    - name: Build the Docker image
+    - name: Build Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
